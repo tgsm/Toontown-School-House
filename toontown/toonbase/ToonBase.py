@@ -111,7 +111,7 @@ class ToonBase(OTPBase.OTPBase):
         self.housingEnabled = self.config.GetBool('want-housing', 1)
         self.cannonsEnabled = self.config.GetBool('estate-cannons', 0)
         self.fireworksEnabled = self.config.GetBool('estate-fireworks', 0)
-        self.dayNightEnabled = self.config.GetBool('estate-day-night', 1)
+        self.dayNightEnabled = self.config.GetBool('estate-day-night', 0)
         self.cloudPlatformsEnabled = self.config.GetBool('estate-clouds', 0)
         self.greySpacing = self.config.GetBool('allow-greyspacing', 0)
         self.goonsEnabled = self.config.GetBool('estate-goon', 0)
