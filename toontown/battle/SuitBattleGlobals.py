@@ -110,9 +110,9 @@ def getSuitAttack(suitName, suitLevel, attackNum = -1):
     return adict
 
 
-SuitAttributes = {'f': {'name': TTLocalizer.SuitFlunky,
-       'singularname': TTLocalizer.SuitFlunkyS,
-       'pluralname': TTLocalizer.SuitFlunkyP,
+SuitAttributes = {'f': {'name': TTLocalizer.SuitSpunkyFlunky,
+       'singularname': TTLocalizer.SuitSpunkyFlunkyS,
+       'pluralname': TTLocalizer.SuitSpunkyFlunkyP,
        'level': 0,
        'hp': (6,
               12,
