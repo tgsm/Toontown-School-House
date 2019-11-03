@@ -232,14 +232,22 @@ QuestsDefaultReject = ('Hello.',
  'Howdy, _avName_!',
  'Welcome, _avName_!',
  "Hey, _avName_! How's it going?",
+ 'Have you visited the Pet Shop at the playground recently? I hear they have some cute doodles waiting to be adopted!',
+ 'You can buy new tricks to train your Doodle in the Cattlelog at your estate. Some tricks heal more Laff points!',
+ 'Have you tried fishing yet? Step up to a dock at any pond to get started.',
+ 'You can buy new fishing rods in the Cattlelog at your estate. Heavier fishing rods catch heavier fish.',
+ 'Have you tried gardening yet? Order a gardening kit from the Cattlelog at your estate to get started.',
+ 'You can buy statues and decorations for your estate in the Cattlelog if your gardening level is high enough.',
+ 'Have you tried racing yet? Go through the Goofy Speedway tunnel in Toontown Central and buy a kart to get started.',
+ 'Have you tried golfing yet? Go through the minigolf tunnel in Acorn Acres and hop on a golf kart to get started.',
  'Did you know you can open your Shticker Book by hitting F8?',
- 'You can use your map to teleport back to the playground!',
+ 'You can use your map to teleport back to the playground or your estate!',
  'You can make friends with other players by clicking on them.',
- 'You can discover more about a ' + Cog + ' by clicking on him.',
- 'Gather treasures in the playgrounds to fill your Laff meter.',
+ 'You can discover more about a ' + Cog + ' by clicking on them.',
+ 'Gather treasures in the playgrounds to refill your Laff meter.',
  Cog + ' buildings are dangerous places! Do not go in alone!',
  'When you lose a battle, the ' + Cogs + ' take all your gags.',
- 'To get more gags, play Trolley games!',
+ 'To get more gags, play Trolley games and earn jellybeans!',
  'You can get more Laff points by completing ToonTasks.',
  'Every ToonTask gives you a reward.',
  'Some rewards let you carry more gags.',
@@ -2295,7 +2303,7 @@ CheesyEffectHours = 'For the next %(time)s hours, %(effectName)s%(whileIn)s.'
 CheesyEffectDays = 'For the next %(time)s days, %(effectName)s%(whileIn)s.'
 CheesyEffectWhileYouAreIn = ' while you are in %s'
 CheesyEffectExceptIn = ', except in %s'
-SuitFlunky = 'Flunky'
+SuitFlunky = ' Spunky Flunky'
 SuitPencilPusher = 'Pencil Pusher'
 SuitYesman = 'Yesman'
 SuitMicromanager = 'Micro\x03manager'
@@ -3455,6 +3463,10 @@ DaisyChatter = (['Welcome to my garden!', "Hello, I'm " + Daisy + ". What's your
   'I wonder where ' + Goofy + ' is.',
   'Have you seen ' + Donald + "? I can't find him anywhere.",
   'If you see my friend ' + Minnie + ', please say "Hello" to her for me.',
+  'To start gardening order a gardening kit from the Cattlelog at your estate.',
+  'When your plants are fully grown pick them to earn skill points for your shovel.',
+  'When your flower basket is full sell your plants using the wheelbarrow at your estate.',
+  'For every 10 plants you discover you will earn a gardening trophy and a Laff boost.',
   'The better gardening tools you have the better plants you can grow.',
   'There are far too many ' + Cogs + ' near ' + lDonaldsDock + '.',
   'Watering your garden every day keeps your plants happy.',
@@ -3532,6 +3544,7 @@ ChipChatter = (['Welcome to %s!' % lOutdoorZone,
   'We are Chip and Dale!'], ['I like golf.', 'We have the best acorns in Toontown.', 'The golf holes with volcanoes are the most challenging for me.'], ["We're going to the " + lTheBrrrgh + ' and play with %s.' % Pluto,
   "We'll visit %s and fix him." % Donald,
   "I think I'll go swimming at " + lDonaldsDock + '.',
+  'Have you played minigolf yet? Go through the minigolf tunnel and hop in a golf kart to start!',
   "Oh, I'm a little sleepy. I think I'll go to Dreamland."])
 ValentinesChipChatter = (["I'm Chip!", "Happy ValenToon's Day!", "Happy ValenToon's Day, %!"], ["What did you get me for ValenToon's Day, Dale?",
   'Those hearts are good for Laff boosts!',
@@ -3559,6 +3572,7 @@ DaleChatter = (["It's so nice to see you %!",
   'We are Chip and Dale!'], ['I like picnics.', 'Acorns are tasty, try some.', 'Those windmills can be hard too.'], ['Hihihi ' + Pluto + ' is fun to play with.',
   "Yeah, let's fix %s." % Donald,
   'A swim sounds refreshing.',
+  'For every 10 golfing trophies you earn you will earn a big trophy and a Laff boost!',
   "I'm getting tired and could use a nap."])
 ValentinesDaleChatter = (["I'm Dale!", "Happy ValenToon's Day!", "Happy ValenToon's Day, %!"], ['Same thing as last year. Nothing!',
   'I miss the nuts!',
@@ -3614,6 +3628,14 @@ ValentinesGoofyChatter = (["I'm Goofy about ValenToon's Day!", "Happy ValenToon'
   'Toons love their karts!',
   'Make some new friends on the track!'], ['Drive safe, now!', 'Show some love out there!'])
 GoofySpeedwayChatter = (['Welcome to ' + lGoofySpeedway + '.', 'Hi, my name is ' + Goofy + ". What's yours?", "Gawrsh, it's nice to see you %!"], ['Boy, I saw a terrific race earlier.',
+  'Buy a kart from the kart shop to begin racing.',
+  'Check out the top times for each course on the leaderboard. Think you can beat them?',
+  'If you get a record time on a course you will earn extra tickets and a place on the leaderboard!', 
+  'For every 10 racing trophies you earn you will earn a big trophy and a Laff boost!',
+  'You can buy new parts and accessories for your kart with your tickets in the kart shop.',
+  'The Toontown Grand Prix is hosted every Monday. You could earn tons of tickets by entering!',
+  'Running over the red arrows on the track will boost your speed temporarily!',
+  'Running over the item boxes on the track will give you an item. Press the Ctrl key to use it!',
   'Watch out for banana peels on the race track!',
   'Have you upgraded your kart lately?',
   'We just got in some new rims at the kart shop.',
@@ -3760,6 +3782,7 @@ WinterDonaldDChatter = (["Welcome to Donald's Boat and Sleigh Dock!",
   'Happy Winter Holiday, %!'], ['How do you like my duck-orations?',
   'What is snow doing on the lamp posts?',
   'This water better not ice over!',
+  'How did they get the lights up in those trees?',
   'How did they get the lights up in those trees?',
   'This boat is better than a sleigh! or is it?',
   "I don't need reindeer to pull this boat!",
@@ -4149,7 +4172,7 @@ AvatarChoiceDeletePasswordOK = lOK
 AvatarChoiceDeletePasswordCancel = lCancel
 AvatarChoiceDeleteWrongPassword = 'That password does not seem to match.  To delete this Toon, enter your password.'
 AvatarChoiceDeleteWrongConfirm = 'You did not type the right thing.  To delete %(name)s, type "%(confirm)s" and click OK.  Do not type the quotation marks.  Click Cancel if you have changed your mind.'
-AvatarChooserPickAToon = 'Pick  A  7  To  Play'
+AvatarChooserPickAToon = 'Pick  A  Toon  To  Play'
 AvatarChooserQuit = lQuit
 DateOfBirthEntryMonths = ['Jan',
  'Feb',
