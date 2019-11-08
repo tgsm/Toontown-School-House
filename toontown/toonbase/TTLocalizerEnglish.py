@@ -6976,7 +6976,7 @@ CatalogExitButtonText = 'Hang Up'
 CatalogCurrentButtonText = 'To Current Items'
 CatalogPastButtonText = 'To Past Items'
 TutorialHQOfficerName = 'HQ Harry'
-NPCToonNames = {20000: 'Tutorial Tom',
+NPCToonNames = {20000: 'NPC Test Tom',
  999: 'Toon Tailor',
  1000: lToonHQ,
  20001: Flippy,
