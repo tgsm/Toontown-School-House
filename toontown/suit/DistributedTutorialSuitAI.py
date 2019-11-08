@@ -26,9 +26,9 @@ class DistributedTutorialSuitAI(DistributedSuitBaseAI):
     def __init__(self, air):
         DistributedSuitBaseAI.__init__(self, air, None)
         suitDNA = SuitDNA()
-        suitDNA.newSuit('f')
+        suitDNA.newSuit('mh')
         self.dna = suitDNA
-        self.setLevel(1)
+        self.setLevel(12)
         self.confrontPosHpr = (0, 0, 0, 0, 0, 0)
 
     def destroy(self):
